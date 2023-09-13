@@ -161,7 +161,6 @@ export const DELETE = async (request) => {
       { status: 403 }
     );
 
-  //get courseNo from body and validate it
   const body = await request.json();
   const { courseNo } = body;
   if (typeof courseNo !== "string" || courseNo.length !== 6) {
